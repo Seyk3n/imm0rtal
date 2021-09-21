@@ -47,12 +47,12 @@ const commands = {
 	skids:
 	{
 		cmd: 'skids',
-		res: ':<span class="red"></span><br>#<span class="red"> igna</span><br># <span class="red"> woosh</span><br></span># <span class="red"> kyle</span><br></span>'
+		res: ':<span class="red"></span><br>#<span class="red"> barius</span><br># <span class="red"> barius</span><br></span># <span class="red"> barius</span><br></span>'
 	},
 	links: 
 	{
 		cmd: 'links',
-		res: 'Links:<br># <span class="red"><a href="https://discord.gg/nighty" target="_blank"><u>Discord</u></a></span> - My Discord Account.<br># <span class="red"><a href="https://github.com/qoft" target="_blank"><u>Github</u></a></span> - Where i post my code<br># <span class="red"><a href="https://steamcommunity.com/id/qoft" target="_blank"><u>Steam</u></a></span> - You can find me there <span class="green">Online</span> most of the time.<br># <span class="red"><u></u></a></span>'
+		res: 'Links:<br># <span class="red"><a href="https://pornhub.com" target="_blank"><u>Discord</u></a></span> - My Discord Account.<br># <span class="red"><a href="https://pornhub.com" target="_blank"><u>Github</u></a></span> - Where i post my code<br># <span class="red"><a href="https://pornhub.com" target="_blank"><u>Steam</u></a></span> - You can find me there <span class="green">Online</span> most of the time.<br># <span class="red"><u></u></a></span>'
 	},
 	visitors: 
 	{
@@ -71,8 +71,8 @@ const commands = {
 	}
 }
 
-var prephraseRoot = '<span class="red">root@violence.social</span>:<span class="blue">~</span># ';
-var prephrase = '<span class="red">guest@violence.social</span>:<span class="blue">~</span># ';
+var prephraseRoot = '<span class="red">root@immortal.ro</span>:<span class="blue">~</span># ';
+var prephrase = '<span class="red">guest@immortal.ro</span>:<span class="blue">~</span># ';
 
 var form = $('<div style="width: 100%;display: table"><div style="display: table-cell; width: 1%">' + prephrase + '</div>&nbsp<form id="form" style="display: table-cell; width :100%"><input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="tCommand" type="text" maxlength="48" class="nostyle" autofocus /></form></div>').appendTo('#content');
 
@@ -85,7 +85,7 @@ function OnlyRoot(command) {
 function launchCommandAsRoot(command) 
 {
 	var res = '';
-	if (command === './welcome.sh') res = 'wlc to <span class="red">violence.social</span>!<br></span><br>Made By:</span><span class="red"> qoft</span><br>Total Visits: <span class="red">' + visits + '</span>'
+	if (command === './welcome.sh') res = 'wlc to <span class="red">immortal.ro</span>!<br></span><br>Made By:</span><span class="red"> Seyken</span><br>Total Visits: <span class="red">' + visits + '</span>'
 	else
 	{
 		window.alert("Nice try to changing \'root\' variable to 1");
@@ -159,7 +159,7 @@ $('form').on('submit', function(e) {
 				} else {
 					launchCommandAsVisitor({
 						cmd: vInput,
-						res: '<div><p>violence.social: ' + vInput + ': No such file or directory</p></div>'
+						res: '<div><p>immortal.ro: ' + vInput + ': No such file or directory</p></div>'
 					});
 				}
 			} else if (vInput.startsWith("cd ") || vInput === "cd" || vInput.startsWith("mkdir ") || vInput === "mkdir" || vInput.startsWith("touch ") || vInput === "touch" || vInput.startsWith("rm ") || vInput === "rm" || vInput === "ls") {
@@ -180,7 +180,7 @@ $('form').on('submit', function(e) {
 							res = '';
 						}
 					} else {
-						res = 'violence.social: No passwd entry for user ' + loginArray[2] + '';
+						res = 'immortal.ro: No passwd entry for user ' + loginArray[2] + '';
 					}
 					launchCommandAsVisitor({
 						cmd: loginArray[0] + ' ' + loginArray[2],
@@ -234,7 +234,7 @@ $('form').on('submit', function(e) {
 				} else {
 					launchCommandAsVisitor({
 						cmd: vInput,
-						res: '<div><p>[ <span class="red">violence.social</span> ] Usage: music [play/stop/link]</p></div>'
+						res: '<div><p>[ <span class="red">immortal.ro</span> ] Usage: music [play/stop/link]</p></div>'
 					});
 				}
 			} /*else if (vInput.startsWith("friend")) {
@@ -253,7 +253,7 @@ $('form').on('submit', function(e) {
 				} else {
 					launchCommandAsVisitor({
 						cmd: vInput,
-						res: '<div><p>[ <span class="red">violence.social</span> ] Usage: friend [name/list]</p></div>'
+						res: '<div><p>[ <span class="red">immortal.ro</span> ] Usage: friend [name/list]</p></div>'
 					});
 				}
 			}*/ else if (vInput.startsWith("insta")) {
@@ -283,7 +283,7 @@ $('form').on('submit', function(e) {
 				const Disk = '1TB';
 				launchCommandAsVisitor({
 						cmd: $('input').val(),
-						res: '<div><p>&#x2002&#x2002&#x2002SSSSSSSSSSSSSSS&#x2002&#x2002&#x2002&#x2002&#x2002<span class="red">guest@violence.social</span><br>&#x2002SS:::::::::::::::S&#x2002&#x2002&#x2002&#x2002<span class="red">OS:</span> Arch Linux ' + OSVer + '<br>S:::::SSSSSS::::::S&#x2002&#x2002&#x2002&#x2002<span class="red">Kernel:</span> ' + Kernel + '<br>S:::::S&#x2002&#x2002&#x2002&#x2002&#x2002SSSSSSS&#x2002&#x2002&#x2002&#x2002<span class="red">Uptime:</span> ' + upTime + '<br>S:::::S&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002<span class="red">Shell:</span> ' + Shell + '<br>S:::::S&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002<span class="red">Disk:</span> ' + Disk + '<br>&#x2002S::::SSSS<br>&#x2002&#x2002SS::::::SSSSS<br>&#x2002&#x2002&#x2002&#x2002SSS::::::::SS<br>&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002SSSSSS::::S<br>&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002S:::::S<br>&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002S:::::S<br>SSSSSSS&#x2002&#x2002&#x2002&#x2002&#x2002S:::::S<br>S::::::SSSSSS:::::S<br>S:::::::::::::::SS<br>&#x2002SSSSSSSSSSSSSSS</p></div>'
+						res: '<div><p>&#x2002&#x2002&#x2002SSSSSSSSSSSSSSS&#x2002&#x2002&#x2002&#x2002&#x2002<span class="red">guest@immortal.ro</span><br>&#x2002SS:::::::::::::::S&#x2002&#x2002&#x2002&#x2002<span class="red">OS:</span> Arch Linux ' + OSVer + '<br>S:::::SSSSSS::::::S&#x2002&#x2002&#x2002&#x2002<span class="red">Kernel:</span> ' + Kernel + '<br>S:::::S&#x2002&#x2002&#x2002&#x2002&#x2002SSSSSSS&#x2002&#x2002&#x2002&#x2002<span class="red">Uptime:</span> ' + upTime + '<br>S:::::S&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002<span class="red">Shell:</span> ' + Shell + '<br>S:::::S&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002<span class="red">Disk:</span> ' + Disk + '<br>&#x2002S::::SSSS<br>&#x2002&#x2002SS::::::SSSSS<br>&#x2002&#x2002&#x2002&#x2002SSS::::::::SS<br>&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002SSSSSS::::S<br>&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002S:::::S<br>&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002&#x2002S:::::S<br>SSSSSSS&#x2002&#x2002&#x2002&#x2002&#x2002S:::::S<br>S::::::SSSSSS:::::S<br>S:::::::::::::::SS<br>&#x2002SSSSSSSSSSSSSSS</p></div>'
 					});
 			} else if (vInput.trim() !== "") {
 				launchCommandAsVisitor(commands[vInput]);
@@ -293,12 +293,12 @@ $('form').on('submit', function(e) {
 		if (root > 0) {
 			launchCommandAsRoot({
 				cmd: $('input').val(),
-				res: '<div><p>violence.social: ' + $('input').val() + ': command not found</p></div>'
+				res: '<div><p>immortal.ro: ' + $('input').val() + ': command not found</p></div>'
 			});
 		} else {
 			launchCommandAsVisitor({
 				cmd: $('input').val(),
-				res: '<div><p>violence.social: ' + $('input').val() + ': command not found</p></div>'
+				res: '<div><p>immortal.ro: ' + $('input').val() + ': command not found</p></div>'
 			});
 		}
 		if($('input').val() === 'clear') {
