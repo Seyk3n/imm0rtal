@@ -73,6 +73,11 @@ const commands = {
 	{
 		cmd: 'hello',
 		res: 'hello :)'
+	},
+	milsugi: 
+	{
+		cmd: 'milsugi',
+		res: 'sugi pl sclav prost .i.'
 	}
 }
 
