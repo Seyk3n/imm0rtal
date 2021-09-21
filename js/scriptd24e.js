@@ -68,7 +68,7 @@ const commands = {
 	{
 		cmd: 'sex',
 		res: 'hey babe... want to have sex'
-	}
+	},
 	hello: 
 	{
 		cmd: 'hello',
