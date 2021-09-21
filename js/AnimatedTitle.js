@@ -1,6 +1,6 @@
 var rev = "fwd";
 function titlebar(val){
-    var msg  = "ilyqoft";
+    var msg  = "immortal";
     var res = " ";
     var speed = 250;
     var pos = val;
