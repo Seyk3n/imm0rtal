@@ -69,6 +69,11 @@ const commands = {
 		cmd: 'sex',
 		res: 'hey babe... want to have sex'
 	}
+	hello: 
+	{
+		cmd: 'hello',
+		res: 'hello :)'
+	}
 }
 
 var prephraseRoot = '<span class="red">root@immortal.ro</span>:<span class="blue">~</span># ';
